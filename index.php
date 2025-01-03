@@ -1,5 +1,5 @@
 <?php
-include 'includes/head.php'; // Memuat head.php
+include '/head.php'; // Memuat head.php
 
 // Fungsi untuk mengambil konten HTML menggunakan cURL
 function get_html_content($url) {
@@ -249,7 +249,7 @@ foreach ($paginationNodes as $node) {
     </div>
 </div>
 
-<?php include 'includes/foot.php'; // Memuat footer ?>
+<?php include '/foot.php'; // Memuat footer ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
