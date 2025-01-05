@@ -222,8 +222,6 @@ foreach ($paginationNodes as $node) {
 </head>
 <body>
 
-<?php include 'includes/nav.php'; // Memuat navigasi ?>
-
 <div class="container my-5">
     <!-- Form Pencarian -->
     <div class="row mb-4">
