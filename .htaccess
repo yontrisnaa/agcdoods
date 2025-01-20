@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirect /v/judul ke /view.php?id=judul
+RewriteRule ^v/(.*)$ view.php?id=$1 [L,QSA]
+
+# Jika halaman tidak ditemukan, redirect ke base URL
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ / [L,R=301]
