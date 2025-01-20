@@ -1,5 +1,5 @@
 <?php
-include '/head.php'; // Memuat head.php
+include 'head.php'; // Memuat head.php
 
 // Fungsi untuk mengambil konten HTML menggunakan cURL
 function get_html_content($url) {
@@ -194,4 +194,4 @@ foreach ($itemNodes as $item) {
     </div>
 </div>
 
-<?php include '/foot.php'; // Memuat foot.php ?>
+<?php include 'foot.php'; // Memuat foot.php ?>
