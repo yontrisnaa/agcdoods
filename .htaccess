@@ -8,3 +8,9 @@ RewriteRule ^v/(.*)$ view.php?id=$1 [L,QSA]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^.*$ / [L,R=301]
+
+# Jika ?search= kosong, hanya tampilkan ?page=
+RewriteCond %{QUERY_STRING} ^search=&page=([^&]*)$ [NC]
+RewriteRule ^$ /?page=%1 [L,R=301]
+
+# Jika ?search= berisi query, biarkan tetap ada
